@@ -6,9 +6,9 @@ function Nav() {
 
   return (
     <header>
-      <h2>
+      <h1>
         <a href="/">AMIE CARROLL</a>
-      </h2>
+      </h1>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
