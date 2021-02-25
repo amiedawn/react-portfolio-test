@@ -1,21 +1,30 @@
-import React from 'react';
-import About from './components/About';
-import Navbar from './components/Header/Navigation/Navbar';
-import ContactForm from './components/Contact';
+import React from "react";
+import Header from "./components/Header/index";
+//import Navigation from "./components/Navigation/Navbar";
+import About from "./components/About/index";
+import Contact from "./components/Contact/index";
+//import Project from "./components/Project/index";
+//import Resume from "./components/Resume/index";
+//import Footer from "./components/Footer/index";
+//import portfolioData from './portfolioData';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
 
 function App() {
   return (
-    <div className='App'>
-      <header>
-        <Navbar />
-      </header>
-      <main>
-        <About></About>
-        <ContactForm></ContactForm>
-      </main>
-      <footer></footer>
+    <div className="container">
+      <Header>
+        {/* <Navigation></Navigation> */}
+      </Header>
+      <Button variant='primary'>Bootstrap Button</Button>
+      <About></About>
+
+      <Contact></Contact>
+
     </div>
   );
+ 
 }
 
 export default App;
