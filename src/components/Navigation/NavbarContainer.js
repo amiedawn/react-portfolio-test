@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
-function Portfolio() {
+function Navbar() {
   // About is the default page
   const [currentPage, handlePageChange] = useState("About");
 
@@ -32,4 +32,4 @@ function Portfolio() {
     );
 };
 
-export default Portfolio;
+export default Navbar;
