@@ -1,10 +1,12 @@
-import React, { Component } from "react";
+//import React, { Component } from "react";
+import React from "react";
 //import bioPic from "../../../../../assets/cover/bio-pic.png";
 import bioPic from "../../../../assets/images/bio-pic.png";
 
-class About extends Component {
-  render() {
-    return (
+//class About extends Component {
+//  render() {
+//    return (
+  const About = () => (
       <div className="my-5 text-center">
         <h1 id="about">About Me</h1>
         <img
@@ -28,7 +30,7 @@ class About extends Component {
         </p>
       </div>
     );
-  }
-}
+//  }
+//}
 
 export default About;

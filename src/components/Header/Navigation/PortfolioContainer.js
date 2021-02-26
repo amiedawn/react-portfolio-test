@@ -6,8 +6,10 @@ import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
 function Portfolio() {
+  // About is the default page
   const [currentPage, handlePageChange] = useState("About");
 
+  // render the correct currentPage
   const renderPage = () => {
     switch (currentPage) {
       case "Contact":
@@ -25,7 +27,7 @@ function Portfolio() {
           currentPage={currentPage}
           handlePageChange={handlePageChange}
         />
-        <div>{renderPage()}</div>
+        <div>{renderPage(currentPage)}</div>
       </div>
     );
 };
