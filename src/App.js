@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./components/Header/index";
-//import Navigation from "./components/Navigation/Navbar";
-import About from "./components/About/index";
-import Contact from "./components/Contact/index";
+import Header from "./components/Header";
+import Navigation from "./components/Header/Navigation/NavTabs";
+import About from "./components/Header/Navigation/pages/About";
+import Contact from "./components/Header/Navigation/pages/Contact";
 //import Project from "./components/Project/index";
 //import Resume from "./components/Resume/index";
 //import Footer from "./components/Footer/index";
@@ -15,9 +15,9 @@ function App() {
   return (
     <div className="container">
       <Header>
-        {/* <Navigation></Navigation> */}
+         <Navigation></Navigation> 
       </Header>
-      <Button variant='primary'>Bootstrap Button</Button>
+      <Button variant='primary'>Download Resume</Button>
       <About></About>
 
       <Contact></Contact>

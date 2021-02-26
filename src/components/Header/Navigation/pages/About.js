@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import bioPic from "../../assets/cover/bio-pic.png";
+//import bioPic from "../../../../../assets/cover/bio-pic.png";
+import bioPic from "../../../../assets/images/bio-pic.png";
 
 class About extends Component {
   render() {
