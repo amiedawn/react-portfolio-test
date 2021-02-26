@@ -5,7 +5,7 @@ import bioPic from "../../../../assets/images/bio-pic.png";
 class About extends Component {
   render() {
     return (
-      <section className="my-5">
+      <div className="my-5 text-center">
         <h1 id="about">About Me</h1>
         <img
           src={bioPic}
@@ -26,7 +26,7 @@ class About extends Component {
           soccer, and gymnastics. Staying fit and serving in my church are also
           important to me.
         </p>
-      </section>
+      </div>
     );
   }
 }

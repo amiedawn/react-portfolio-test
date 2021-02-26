@@ -39,11 +39,13 @@ function ContactForm() {
  
   return (
     <section>
-      <h1 data-testid="h1tag">Contact Me</h1>
+      <h1 data-testid="h1tag" className="text-center">
+        Contact Me
+      </h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
-          <input
+          <input 
             type="text"
             name="name"
             defaultValue={name}
