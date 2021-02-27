@@ -8,7 +8,7 @@ import Wrapper from "./components/Navigation/pages/Project/Wrapper/Wrapper";
 //import Images from "./components/Navigation/pages/Wrapper/Wrapper";
 import projects from "./projects.json";
 import Resume from "./components/Navigation/pages/Resume";
-//import Footer from "./components/Footer/index";
+import Footer from "./components/Footer";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { images } from './components/imagesAndIcons.js';
@@ -60,6 +60,7 @@ function App() {
         </Wrapper>
         {displayPage(currentPage)}
       </main>
+      <Footer></Footer>
     </div>
   );
 }
