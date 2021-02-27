@@ -46,20 +46,9 @@ function App() {
         />
       </Header>
       
-      <main>
-        <Wrapper>
-          <h1 className="title">Project List</h1>
-          {projectsList.map((project) => (
-            // bring in all project key/value properties with "...project"
-            <ProjectCard
-              images={images}
-              key={project.id}
-              {...project}
-            />
-          ))}
-        </Wrapper>
+     
         {displayPage(currentPage)}
-      </main>
+      
       <Footer></Footer>
     </div>
   );

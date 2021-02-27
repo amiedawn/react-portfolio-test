@@ -4,7 +4,7 @@ export const images = [
     id: 1,
     name: "Workout Planner",
     alt: "Workout Planner screenshot",
-    src: "../../../../../assets/projects/workout-planner.png",
+    src: "../../../../../public/workout-planner.png",
     deployUrl: "https://quiet-forest-44254.herokuapp.com",
     githubUrl: "https://github.com/amiedawn/workout-planner",
   },

@@ -8,15 +8,10 @@ import ProjectCard from '../ProjectCard/ProjectCard';
 //  };
 
 const Wrapper = ({ images }) => {
-  const imageArray = images && images.map((image, i) => {
-    return <ProjectCard image={image} key={i} />;
-  });
+ // const imageArray = images && images.map((image, i) => {
+    return <ProjectCard  />;
+  };
 
-  return (
-    <div id="wrapper">
-      {imageArray}
-    </div>
-  )
-};
+  
 
 export default Wrapper;
