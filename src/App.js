@@ -1,29 +1,29 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation/NavTabs";
-//import Navigation from './components/Navigation/NavbarContainer';
 import About from "./components/Navigation/pages/About";
 import Contact from "./components/Navigation/pages/Contact";
-//import Project from "./components/Project/index";
+import ProjectCard from "./components/Project/ProjectCard/ProjectCard";
+import Wrapper from "./components/Project/Wrapper/Wrapper";
+import projects from "./projects.json";
 //import Resume from "./components/Resume/index";
 //import Footer from "./components/Footer/index";
-//import portfolioData from './portfolioData';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 
 function App() {
-  // const [tabs] = useState(["About Me", "Portfolio", "Contact", "Resume"]);
+  // define the nav tabs
   const tabs = ["About Me", "Portfolio", "Contact", "Resume"];
-
+  // define props for navbar
   const [currentPage, handlePageChange] = useState(tabs[0]);
-
-  function displayComponent(tabName) {
+  // decide which page to display at a given time
+  function displayPage(tabName) {
     switch (tabName) {
       case "About Me":
         return <About></About>;
-      // case "Portfolio":
-        // return <Portfolio></Portfolio>;
+      case "Portfolio":
+        return <Wrapper></Wrapper>;
       case "Contact":
         return <Contact></Contact>;
       // case "Resume":
@@ -31,7 +31,9 @@ function App() {
       default:
         return <About></About>;
     }
-  }
+  };
+
+  const [projectsList, setProjectsList] = useState(projects);
 
   return (
     <div className="container">
@@ -43,7 +45,20 @@ function App() {
         />
       </Header>
       <Button variant="primary">Download Resume</Button>
-      <main>{displayComponent(currentPage)}</main>
+      <main>
+        <Wrapper>
+          <h1 className="title">Project List</h1>
+          {projectsList.map((project) => (
+            // bring in all project key/value properties with "...project"
+            <ProjectCard
+              key={project.id}
+              {...project}
+              // removeProject={() => {}}
+            />
+          ))}
+        </Wrapper>
+        {displayPage(currentPage)}
+      </main>
     </div>
   );
 }

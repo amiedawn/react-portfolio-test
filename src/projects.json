@@ -2,14 +2,14 @@
   {
     "id": 1,
     "name": "Workout Planner",
-    "image": "../../assets/projects/workout-planner.png",
+    "image": "../../../assets/projects/workout-planner.png",
     "deployUrl": "https://quiet-forest-44254.herokuapp.com",
     "githubUrl": "https://github.com/amiedawn/workout-planner"
   },
   {
     "id": 2,
     "name": "Jokinator",
-    "image": "/assets/projects/jokinator.png",
+    "image": "../../../assets/projects/jokinator.png",
     "deployUrl": "amiedawn.github.io/jokinator",
     "githubUrl": "https://github.com/amiedawn/jokinator"
   },
