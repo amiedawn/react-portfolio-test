@@ -3,14 +3,16 @@ import Header from "./components/Header";
 import Navigation from "./components/Navigation/NavTabs";
 import About from "./components/Navigation/pages/About";
 import Contact from "./components/Navigation/pages/Contact";
-import ProjectCard from "./components/Project/ProjectCard/ProjectCard";
-import Wrapper from "./components/Project/Wrapper/Wrapper";
+import ProjectCard from "./components/Navigation/pages/Project/ProjectCard/ProjectCard";
+import Wrapper from "./components/Navigation/pages/Project/Wrapper/Wrapper";
+//import Images from "./components/Navigation/pages/Wrapper/Wrapper";
 import projects from "./projects.json";
 //import Resume from "./components/Resume/index";
 //import Footer from "./components/Footer/index";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
+import { images } from '/components/imagesAndIcons.js';
 
 function App() {
   // define the nav tabs
@@ -33,7 +35,7 @@ function App() {
     }
   };
 
-  const [projectsList, setProjectsList] = useState(projects);
+  const [projectsList] = useState(projects);
 
   return (
     <div className="container">
@@ -53,7 +55,6 @@ function App() {
             <ProjectCard
               key={project.id}
               {...project}
-              // removeProject={() => {}}
             />
           ))}
         </Wrapper>
