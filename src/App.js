@@ -13,22 +13,37 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 
 function App() {
-  const [tabs] = useState(["About Me", "Portfolio", "Contact", "Resume"]);
+  // const [tabs] = useState(["About Me", "Portfolio", "Contact", "Resume"]);
+  const tabs = ["About Me", "Portfolio", "Contact", "Resume"];
 
   const [currentPage, handlePageChange] = useState(tabs[0]);
+
+  function displayComponent(tabName) {
+    switch (tabName) {
+      case "About Me":
+        return <About></About>;
+      // case "Portfolio":
+        // return <Portfolio></Portfolio>;
+      case "Contact":
+        return <Contact></Contact>;
+      // case "Resume":
+        // return <Resume></Resume>;
+      default:
+        return <About></About>;
+    }
+  }
+
   return (
-    <div className='container'>
-      <Header> 
+    <div className="container">
+      <Header>
         <Navigation
           tabs={tabs}
           currentPage={currentPage}
           handlePageChange={handlePageChange}
         />
-      </Header> 
+      </Header>
       <Button variant="primary">Download Resume</Button>
-      <About></About> 
-
-      <Contact></Contact>
+      <main>{displayComponent(currentPage)}</main>
     </div>
   );
 }
