@@ -1,5 +1,6 @@
 import React from "react";
 import "./projectStyle.css";
+//import { images } from "./components/imagesAndIcons.js";
 //import image1 from "../../../../../assets/projects/workout-planner.png";
 //import image2 from "../../../../../assets/projects/jokinator.png";
 
@@ -28,17 +29,29 @@ import "./projectStyle.css";
 // }
 const ProjectCard = ({ image }) => {
   return (
-    <img
-      className="img-fluid"
-      src={image.src}
-      alt={image.alt}
-      title={image.title}
-      style={{ width: "450px" }}
-    />
+    <div>
+      <img
+        className="img-fluid"
+        src={image.src}
+        alt={image.alt}
+        name={image.name}
+        style={{ width: "450px" }}
+      />
+      <a href={image.deployUrl} target="_blank" rel="noopener noreferrer">{image.deployUrl}</a>
+      <a href={image.githubUrl} target="_blank" rel="noopener noreferrer">{image.githubUrl}</a>
+      <p
+        className="white-text text-capitalize"
+        style={{
+          backgroundColor: "rgba(0,0,0,0.6)",
+          padding: "5px",
+          textAlign: "center",
+          fontSize: "15px",
+        }}
+      >
+        {image.name}
+      </p>
+    </div>
   );
-}
-
+};
 
 export default ProjectCard;
-
-

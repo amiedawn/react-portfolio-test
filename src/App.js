@@ -7,12 +7,11 @@ import ProjectCard from "./components/Navigation/pages/Project/ProjectCard/Proje
 import Wrapper from "./components/Navigation/pages/Project/Wrapper/Wrapper";
 //import Images from "./components/Navigation/pages/Wrapper/Wrapper";
 import projects from "./projects.json";
-//import Resume from "./components/Resume/index";
+import Resume from "./components/Navigation/pages/Resume";
 //import Footer from "./components/Footer/index";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
-import { images } from '/components/imagesAndIcons.js';
+import { images } from './components/imagesAndIcons.js';
 
 function App() {
   // define the nav tabs
@@ -28,8 +27,8 @@ function App() {
         return <Wrapper></Wrapper>;
       case "Contact":
         return <Contact></Contact>;
-      // case "Resume":
-        // return <Resume></Resume>;
+      case "Resume":
+       return <Resume></Resume>;
       default:
         return <About></About>;
     }
@@ -46,13 +45,14 @@ function App() {
           handlePageChange={handlePageChange}
         />
       </Header>
-      <Button variant="primary">Download Resume</Button>
+      
       <main>
         <Wrapper>
           <h1 className="title">Project List</h1>
           {projectsList.map((project) => (
             // bring in all project key/value properties with "...project"
             <ProjectCard
+              images={images}
               key={project.id}
               {...project}
             />

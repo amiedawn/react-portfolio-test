@@ -12,21 +12,15 @@ class Header extends Component {
   render() {
     return (
       <header>
-        {/* <nav className="NavbarItems"> */}
           <h1 className="navbar-logo">
             <span>
               <a href="/">AMIE CARROLL </a>
               <i className="fas fa-laptop-code"></i>
             </span>
           </h1>
-          {/* <div className="menu-icon" onClick={this.handleClick}> */}
-            {/* <i */}
-              {/* className={this.state.clicked ? "fas fa-times" : "fas fa-bars"} */}
-            {/* /> */}
-          {/* </div> */}
+          {/* show navbar */}
           {this.props.children}
-          {/* <Navbar></Navbar> */}
-        {/* </nav> */}
+        
       </header>
     );
   }
