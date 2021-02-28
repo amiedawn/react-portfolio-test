@@ -1,59 +1,58 @@
 import React, { Component } from "react";
+import { StyleSheet, View, Text, ScrollView } from 'react-native';
+import { SocialIcon } from 'react-native-elements';
 
 class Footer extends Component {
   render() {
     return (
-      <div>
-        <div className="row social" style={{ margin: 0 }}>
-          <div className="col-lg-12">
-            <ul>
-              <li>
-                <a
-                  href="mailto:amiedawn@hotmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa fa-envelope fa-fw fa-2x" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://www.linkedin.com/in/amie-carroll-0976606"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-linkedin fa-fw fa-2x" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://www.facebook.com/amie.whitecarroll"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-facebook fa-fw fa-2x" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/amiedawn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-github fa-fw fa-2x" />
-                </a>
-              </li>
-            </ul>
-            <br />
-          </div>
-        </div>
-        <div className="row" id="copyright" style={{ margin: 0 }}>
-          <div className="col-lg-12">
-            <p className="small">© 2021 Amie Carroll</p>
-          </div>
-        </div>
-      </div>
-    );
+      <ScrollView>
+        <View style={styles.MainContainer}>
+          <Text style={{ fontSize: 20, marginBottom: 20, textAlign: 'center'}}></Text>
+            <View style={{ flex: 1, flexDirection: 'row'}}>
+             <View style={{ width: '100%' }}>
+              <SocialIcon
+                title="Email"
+                button
+                type="envelope"
+                onPress={() => {
+                  alert('Envelope');
+                }}
+              />
+            </View>
+
+            <View style={{ flexDirection: 'column'}}>
+              <SocialIcon 
+                type='facebook'
+                onPress={() => {
+                  alert('facebook');
+                }}
+              />
+              <Text style={{ textAlign: 'center' }}></Text>
+            </View>
+
+            <View style={{ flexDirection: 'column' }}>
+		          <SocialIcon
+                type="github"
+                onPress={() => {
+                alert('github');
+                }}
+              />
+              <Text style={{ textAlign: 'center' }}>GitHub</Text>
+            </View>  
+
+            <View style={{ flexDirection: 'column' }}>
+              <SocialIcon
+                type="linkedin"
+                onPress={() => {
+                alert('linkedin');
+                }}
+              />
+              <Text style={{ textAlign: 'center' }}>Linkedin</Text>
+            </View>
+          </View>  
+        </View>
+      </ScrollView>
+    )
   }
 }
 
