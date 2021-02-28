@@ -9,9 +9,8 @@ const ProjectCard = () => {
     const {default:source} = require(`../../../../../assets/projects/${i}.png`)
     return (
       <Container fluid>
-        
         <div className="row text-center">
-          <div className="col-md-12"></div>
+          <div className="col-md-12 content"></div>
           <div>
             <hr />
             <p
