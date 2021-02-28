@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../../utils/helpers";
+import Form from "react-bootstrap/Form";
 
 function ContactForm() {
   const [formState, setFormState] = useState({
@@ -37,7 +38,7 @@ function ContactForm() {
   };
  
   return (
-    <section>
+    <Form>
       <h1 data-testid="h1tag" className="text-center">
         Contact Me
       </h1>
@@ -78,7 +79,7 @@ function ContactForm() {
           Submit
         </button>
       </form>
-    </section>
+    </Form>
   );
 }
 
