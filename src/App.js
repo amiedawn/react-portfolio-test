@@ -7,7 +7,6 @@ import Contact from "./components/Navigation/pages/Contact";
 import Wrapper from "./components/Navigation/pages/Project/Wrapper/Wrapper";
 //import Images from "./components/Navigation/pages/Wrapper/Wrapper";
 import Resume from "./components/Navigation/pages/Resume/Resume";
-//import DownloadResume from "./components/DownloadResume";
 import Footer from "./components/Footer";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
