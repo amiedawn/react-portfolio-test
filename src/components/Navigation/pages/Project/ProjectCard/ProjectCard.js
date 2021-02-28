@@ -33,40 +33,36 @@ const ProjectCard = () => {
     const {default:source} = require(`../../../../../assets/projects/${i}.png`)
     return (
       <div>
+        <hr />
+        <p
+          className="black-text text-capitalize"
+          style={{
+            backgroundColor: "grey",
+            padding: "5px",
+            textAlign: "center",
+            fontSize: "35px",
+          }}
+        >
+          {image.name}
+        </p>
+
         <img
           className="img-fluid"
           src={source}
           alt={image.alt}
           name={image.name}
-          style={{ width: "450px" }}
+          style={{ width: "750px" }}
         />
-        <a
-          href={image.deployUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {image.deployUrl}
-        </a>
-        <a
-          href={image.githubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {image.githubUrl}
-        </a>
-        <p
-          className="white-text text-capitalize"
-          style={{
-            backgroundColor: "rgba(0,0,0,0.6)",
-            padding: "5px",
-            textAlign: "center",
-            fontSize: "15px",
-          }}
-        >
-          {image.name}
-        </p>
+        <div>
+            <button href={image.deployUrl} target="_blank" rel="noopener noreferrer">
+              {image.deployUrl}
+            </button>
+            <button href={image.githubUrl} target="_blank" rel="noopener noreferrer">
+              {image.githubUrl}
+            </button>
+        </div>
       </div>
-  )})
+    );})
 )};
 
 export default ProjectCard;

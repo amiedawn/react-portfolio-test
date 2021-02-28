@@ -6,7 +6,8 @@ import Contact from "./components/Navigation/pages/Contact";
 //import ProjectCard from "./components/Navigation/pages/Project/ProjectCard/ProjectCard";
 import Wrapper from "./components/Navigation/pages/Project/Wrapper/Wrapper";
 //import Images from "./components/Navigation/pages/Wrapper/Wrapper";
-import Resume from "./components/Navigation/pages/Resume";
+import Resume from "./components/Navigation/pages/Resume/Resume";
+//import DownloadResume from "./components/DownloadResume";
 import Footer from "./components/Footer";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,8 +33,6 @@ function App() {
         return <About></About>;
     }
   };
-
- // const [projectsList] = useState(projects);
 
   return (
     <div className="container">
