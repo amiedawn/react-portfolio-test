@@ -9,7 +9,7 @@ class Footer extends Component {
             <ul>
               <li>
                 <a
-                  href="mailto:amiedawn@hotmail@gmail.com"
+                  href="mailto:amiedawn@hotmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -18,11 +18,11 @@ class Footer extends Component {
               </li>
               <li>
                 <a
-                  href="http://www.linkedin.com/in/amie-carroll-09766061"
+                  href="http://www.linkedin.com/in/amie-carroll-0976606"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-linkedin fa-fw fa-2x" />
+                  <i className="fab fa-linkedin fa-fw fa-2x" />
                 </a>
               </li>
               <li>
@@ -31,7 +31,7 @@ class Footer extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-linkedin fa-fw fa-2x" />
+                  <i className="fab fa-facebook fa-fw fa-2x" />
                 </a>
               </li>
               <li>
@@ -40,7 +40,7 @@ class Footer extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-github fa-fw fa-2x" />
+                  <i className="fab fa-github fa-fw fa-2x" />
                 </a>
               </li>
             </ul>

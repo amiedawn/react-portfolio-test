@@ -1,32 +1,7 @@
 import React from "react";
 import "./projectStyle.css";
-import { images } from "../../../../imagesAndIcons.js";
-//import images from "../../../../../../public/workout-planner.png";
-//import image2 from "../../../../../assets/projects/jokinator.png";
+import { images } from "../../../../projectData.js";
 
-// Props are passed through our functional component.
-// function ProjectCard({ id, name, image, deployUrl, githubUrl}) {
-//   return (
-//     <div className="card">
-//       <div className="img-container">
-//         <img alt={name} src={image1} />
-//       </div>
-//       <div className="content">
-//         <ul>
-//           <li>
-//             <strong>Name:</strong> {name}
-//           </li>
-//           <li>
-//             <strong>Deployed URL:</strong> {deployUrl}
-//           </li>
-//           <li>
-//             <strong>GitHub URL:</strong> {githubUrl}
-//           </li>
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// }
 const ProjectCard = () => {
   return(
   images.map((image, i) => {
@@ -54,12 +29,12 @@ const ProjectCard = () => {
           style={{ width: "750px" }}
         />
         <div>
-            <button href={image.deployUrl} target="_blank" rel="noopener noreferrer">
+            <a href={image.deployUrl} target="_blank" rel="noopener noreferrer">
               {image.deployUrl}
-            </button>
-            <button href={image.githubUrl} target="_blank" rel="noopener noreferrer">
+            </a>
+            <a href={image.githubUrl} target="_blank" rel="noopener noreferrer">
               {image.githubUrl}
-            </button>
+            </a>
         </div>
       </div>
     );})

@@ -13,7 +13,7 @@ export const images = [
     name: "Jokinator",
     alt: "Jokinator screenshot",
     src: "../../../../../assets/projects/jokinator.png",
-    deployUrl: "amiedawn.github.io/jokinator",
+    deployUrl: "https://amiedawn.github.io/jokinator",
     githubUrl: "https://github.com/amiedawn/jokinator",
   },
   {
@@ -45,7 +45,7 @@ export const images = [
     name: "Work Portfolio",
     alt: "Work Portfolio screenshot",
     src: "../../../../../assets/projects/work-portfolio.png",
-    deployUrl: "https://amiedawn.gibhub.io/work-portfolio",
+    deployUrl: "https://amiedawn.github.io/work-portfolio",
     githubUrl: "https://github.com/amiedawn/work-portfolio",
   },
 ];
