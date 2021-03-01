@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import myResume from "../../../../assets/images/resume.png";
+import myResume from "../assets/images/resume.png";
 import Button from "react-bootstrap/Button";
 
 class DownloadResume extends Component {

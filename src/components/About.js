@@ -1,13 +1,13 @@
 import React from "react";
-import bioPic from "../../../assets/images/bio-pic.png";
+import bioPic from "../assets/images/bio-pic.png";
 
 const About = () => (
-  <div className="my-5 text-center">
+  <div className="my-5 mb-5 text-center">
     <h1 id="about">About Me</h1>
     <img
       src={bioPic}
       className="my-2"
-      style={{ width: "15%" }}
+      style={{ width: "35%", padding: "25px" }}
       alt="pic of author"
     />
     <p>

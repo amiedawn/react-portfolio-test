@@ -36,7 +36,7 @@ export default function Footer() {
           </a>
           <div className="row" id="copyright" style={{ margin: 0 }}>
             <div className="col-lg-12 ">
-              <p className="small ">© 2021</p>
+              <p className="medium">© 2021</p>
             </div>
           </div>
         </div>

@@ -1,12 +1,12 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import "./projectStyle.css";
-import { images } from "../../../../projectData.js";
+//import "./projectStyle.css";
+import { images } from "./projectData.js";
 
 const ProjectCard = () => {
   return(
   images.map((image, i) => {
-    const {default:source} = require(`../../../../../assets/projects/${i}.png`)
+    const {default:source} = require(`../assets/projects/${i}.png`)
     return (
       <Container fluid>
         <div className="row text-center">

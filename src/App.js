@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import Navigation from "./components/Navigation/NavTabs";
-import About from "./components/Navigation/pages/About";
-import Contact from "./components/Navigation/pages/Contact";
-//import ProjectCard from "./components/Navigation/pages/Project/ProjectCard/ProjectCard";
-import Wrapper from "./components/Navigation/pages/Project/Wrapper/Wrapper";
-//import Images from "./components/Navigation/pages/Wrapper/Wrapper";
-import Resume from "./components/Navigation/pages/Resume/Resume";
+import Navigation from "./components/NavTabs";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Wrapper from "./components/Wrapper";
+import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import { images } from './components/imagesAndIcons.js';
 
 function App() {
   // define the nav tabs
@@ -42,10 +39,7 @@ function App() {
           handlePageChange={handlePageChange}
         />
       </Header>
-      
-     
-        {displayPage(currentPage)}
-      
+       {displayPage(currentPage)}
       <Footer></Footer>
     </div>
   );
