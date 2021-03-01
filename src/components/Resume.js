@@ -8,7 +8,7 @@ function Resume() {
         style={{
           backgroundColor: "#122240",
           color: "#c0a98e",
-          padding: "40px",
+          padding: "20px",
         }}
       >
         <DownloadResume></DownloadResume>

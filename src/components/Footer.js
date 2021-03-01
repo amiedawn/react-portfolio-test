@@ -5,11 +5,11 @@ export default function Footer() {
   return (
     <Container fluid>
       <div
-        className="row text-center mt-5"
+        className="row text-center"
         style={{
           backgroundColor: "#122240",
           color: "#be8180",
-          padding: "1.5rem",
+          padding: "1rem",
         }}
       >
         <div className="col-md-12 content">
@@ -67,7 +67,7 @@ export default function Footer() {
                 style={{
                   backgroundColor: "#122240",
                   color: "#575a4b",
-                  padding: "15px",
+                
                 }}
                 className="medium"
               >

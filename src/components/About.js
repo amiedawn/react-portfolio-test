@@ -3,7 +3,7 @@ import bioPic from "../assets/images/bio-pic.png";
 
 const About = () => (
   <div
-    className="my-1 mb-5 text-center"
+    className="text-center"
     style={{
       backgroundColor: "#122240",
       color: "#c0a98e",
@@ -13,7 +13,6 @@ const About = () => (
     <h1 id="about">About Me</h1>
     <img
       src={bioPic}
-      className="my-2"
       style={{ width: "35%", padding: "35px" }}
       alt="pic of author"
     />
