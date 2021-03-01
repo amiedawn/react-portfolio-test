@@ -39,13 +39,13 @@ function ContactForm() {
   };
  
   return (
-    <Form>
+    <div>
       <h1 data-testid="h1tag" className="text-center">
         Contact Me
       </h1>
 
       <form id="contact-form" onSubmit={handleSubmit}>
-        <Form.Group controlId="formGroupName">
+        <Form.Group>
           <Form.Label htmlFor="name">Name:</Form.Label>
           <Form.Control
             type="text"
@@ -54,7 +54,7 @@ function ContactForm() {
             onBlur={handleChange}
           />
         </Form.Group>
-        <Form.Group controlId="formGroupEmail">
+        <Form.Group>
           <Form.Label htmlFor="email">Email Address:</Form.Label>
           <Form.Control
             type="email"
@@ -63,7 +63,7 @@ function ContactForm() {
             onBlur={handleChange}
           />
         </Form.Group>
-        <Form.Group controlId="formGroupMessage">
+        <Form.Group>
           <Form.Label htmlFor="message">Message:</Form.Label>
           <Form.Control as='textarea'
             name="message"
@@ -81,7 +81,7 @@ function ContactForm() {
           Submit
         </Button>
       </form>
-    </Form>
+    </div>
   );
 }
 

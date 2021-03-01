@@ -2,15 +2,24 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 //import "./projectStyle.css";
 import { images } from "./projectData.js";
+import Button from 'react-bootstrap/Button';
 
 const ProjectCard = () => {
   return(
   images.map((image, i) => {
     const {default:source} = require(`../assets/projects/${i}.png`)
     return (
-      <Container fluid>
-        <div className="row text-center">
-          <div className="col-md-12 content"></div>
+      <Container
+        key={i}
+        style={{
+          flex: 1,
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <div>
+          <div></div>
           <div>
             <hr />
             <p
@@ -30,23 +39,32 @@ const ProjectCard = () => {
               src={source}
               alt={image.alt}
               name={image.name}
-              style={{ width: "750px" }}
+              style={{
+                flex: 1,
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
             />
             <div>
-              <a
-                href={image.deployUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {image.deployUrl}
-              </a>
-              <a
-                href={image.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {image.githubUrl}
-              </a>
+              <div style={{ padding: "25px" }}>
+                <Button
+                  block
+                  href={image.deployUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {image.deployUrl}
+                </Button>
+                <Button
+                  block
+                  href={image.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {image.githubUrl}
+                </Button>
+              </div>
             </div>
           </div>
         </div>
