@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Container from 'react-bootstrap/Container';
+import Container from "react-bootstrap/Container";
 
 class Header extends Component {
   state = { clicked: false };
@@ -15,7 +15,7 @@ class Header extends Component {
         style={{
           backgroundColor: "#122240",
           color: "#be8180",
-          padding: "15px"
+          padding: "15px",
         }}
       >
         <div className="row my-5 text-center">
@@ -23,11 +23,12 @@ class Header extends Component {
 
           <h1 className="navbar-logo">
             <span>
-              <a className="ml-4"
+              <a
+                className="ml-4"
                 style={{
                   backgroundColor: "#122240",
                   color: "#be8180",
-                  padding: "5px"
+                  padding: "5px",
                 }}
                 href="/"
               >
