@@ -22,7 +22,7 @@ This application can be cloned at https://github.com/amiedawn/react-portfolio.gi
 
 ## Usage Information:
 
-To view this portfolio, simply go to http://amiedawn.github.io/React-Portfolio . Here is a preview:<br><br>![Screenshot](/public/screenshot.png) .
+To view this portfolio, simply go to http://amiedawn.github.io/react-portfolio . Here is a preview:<br><br>![Screenshot](/public/screenshot.png) .
 
 ## License:
 
