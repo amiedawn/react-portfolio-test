@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-//import "./projectStyle.css";
+import "../projectStyle.css";
 import { images } from "./projectData.js";
 import Button from 'react-bootstrap/Button';
 
@@ -16,6 +16,7 @@ const ProjectCard = () => {
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "center",
+          backgroundColor: "#122240",
         }}
       >
         <div>
@@ -25,7 +26,7 @@ const ProjectCard = () => {
             <p
               className="black-text text-capitalize"
               style={{
-                backgroundColor: "grey",
+                backgroundColor: "#be8180",
                 padding: "5px",
                 textAlign: "center",
                 fontSize: "35px",
@@ -47,8 +48,18 @@ const ProjectCard = () => {
               }}
             />
             <div>
-              <div style={{ padding: "25px" }}>
+              <div
+                style={{
+                  padding: "25px",
+                  backgroundColor: "#be8180",
+                }}
+              >
                 <Button
+                  style={{
+                    backgroundColor: "#c0a98e",
+                    color: "#122240",
+                    borderColor: "#122240"
+                  }}
                   block
                   href={image.deployUrl}
                   target="_blank"
@@ -57,6 +68,11 @@ const ProjectCard = () => {
                   {image.deployUrl}
                 </Button>
                 <Button
+                  style={{
+                    backgroundColor: "#c0a98e",
+                    color: "#122240",
+                    borderColor: "#122240",
+                  }}
                   block
                   href={image.githubUrl}
                   target="_blank"
