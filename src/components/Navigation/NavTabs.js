@@ -9,7 +9,7 @@ function NavTabs(props) {
   } = props;
   
   return (
-    <ul className="nav nav-tabs">
+    <ul className="nav nav-tabs ml-auto my-1">
       {tabs.map((tab) => (
         <li className="nav-item" key={tab}>
           <a

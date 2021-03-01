@@ -1,32 +1,11 @@
 import React, { Component } from "react";
-
-// export const PortButton = styled.a`
-//   padding: 10px 15px;
-//   background: 0 0;
-  
-//   border-radius: 3px;
-//   margin: 0 5px;
- 
-//   font-family: Gotham, Helvetica, Arial, sans-serif;
-//   font-weight: 500;
-//   text-transform: uppercase;
-//   transition: all 0.3s ease;
-//   &:hover {
-    
-//     color: #fff;
-    
-//   }
-//   @media (max-width: 600px) {
-//     padding: 5px 7px;
-//   }
-// `;
+import Container from "react-bootstrap/Container";
 
 class Code extends Component {
   render() {
     return (
-      <div>
-        <div>
-          <div>Skills:</div>
+      <Container>
+        <h1 className="mb-3 my-3 text-center">Skills</h1>
           <div className="row">
             <div className="col-lg-4 col-md-4 col-sm-4">
               <h5>Front-end:</h5>
@@ -75,9 +54,8 @@ class Code extends Component {
               </ul>
             </div>
           </div>
-        </div>
-        <hr />
-      </div>
+        </Container>
+    
     );
   }
 }

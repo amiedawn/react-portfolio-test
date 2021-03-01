@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 export default function Footer() {
   return (
     <Container fluid>
-      <div className="row text-center">
+      <div className="row text-center mt-5">
         <div className="col-md-12 content">
           <a
             href="mailto:amiedawn@hotmail.com"

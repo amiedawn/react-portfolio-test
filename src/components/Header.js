@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 //import Navbar from "../Navigation-wrong/Navbar";
 //import "../Navigation-wrong/Navbar.css";
+import Container from 'react-bootstrap/Container';
 
 class Header extends Component {
   state = { clicked: false };
@@ -11,17 +12,20 @@ class Header extends Component {
 
   render() {
     return (
-      <header>
-          <h1 className="navbar-logo">
-            <span>
-              <a href="/">AMIE CARROLL </a>
-              <i className="fas fa-laptop-code"></i>
-            </span>
-          </h1>
-          {/* show navbar */}
-          {this.props.children}
+      <Container fluid>
+        <div className="row my-5 text-center">
+          <div className="col-md-12 content"></div>
         
-      </header>
+            <h1 className="navbar-logo">
+              <span>
+                <a href="/">AMIE CARROLL </a>
+                <i className="fas fa-laptop-code"></i>
+              </span>
+            </h1>
+            {/* show navbar */}
+            {this.props.children}
+        </div>
+      </Container>
     );
   }
 }
