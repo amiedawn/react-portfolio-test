@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import "../projectStyle.css";
 import { images } from "./projectData.js";
 import Button from 'react-bootstrap/Button';
 
@@ -9,7 +8,7 @@ const ProjectCard = () => {
   images.map((image, i) => {
     const {default:source} = require(`../assets/projects/${i}.png`)
     return (
-      <Container
+      <Container 
         key={i}
         style={{
           flex: 1,
@@ -17,12 +16,13 @@ const ProjectCard = () => {
           alignItems: "center",
           justifyContent: "center",
           backgroundColor: "#122240",
+          padding: "2rem"
         }}
       >
         <div>
           <div></div>
           <div>
-            <hr />
+            <hr/>
             <p
               className="black-text text-capitalize"
               style={{

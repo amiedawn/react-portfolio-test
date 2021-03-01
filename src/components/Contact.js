@@ -40,12 +40,33 @@ function ContactForm() {
  
   return (
     <div>
-      <h1 data-testid="h1tag" className="text-center">
+      <h1
+        data-testid="h1tag"
+        className="text-center"
+        style={{
+          backgroundColor: "#122240",
+          color: "#c0a98e",
+          padding: "20px",
+        }}
+      >
         Contact Me
       </h1>
 
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <Form.Group>
+      <form
+        id="contact-form"
+        onSubmit={handleSubmit}
+        style={{
+          backgroundColor: "#122240",
+          color: "#c0a98e",
+        }}
+      >
+        <Form.Group
+          style={{
+            backgroundColor: "#122240",
+            color: "#c0a98e",
+            padding: "20px",
+          }}
+        >
           <Form.Label htmlFor="name">Name:</Form.Label>
           <Form.Control
             type="text"
@@ -54,7 +75,13 @@ function ContactForm() {
             onBlur={handleChange}
           />
         </Form.Group>
-        <Form.Group>
+        <Form.Group
+          style={{
+            backgroundColor: "#122240",
+            color: "#c0a98e",
+            padding: "20px",
+          }}
+        >
           <Form.Label htmlFor="email">Email Address:</Form.Label>
           <Form.Control
             type="email"
@@ -63,9 +90,16 @@ function ContactForm() {
             onBlur={handleChange}
           />
         </Form.Group>
-        <Form.Group>
+        <Form.Group
+          style={{
+            backgroundColor: "#122240",
+            color: "#c0a98e",
+            padding: "20px",
+          }}
+        >
           <Form.Label htmlFor="message">Message:</Form.Label>
-          <Form.Control as='textarea'
+          <Form.Control
+            as="textarea"
             name="message"
             rows={5}
             defaultValue={message}
@@ -77,7 +111,15 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <Button data-testid="button" type="submit">
+        <Button className="ml-4 mb-4"
+          data-testid="button"
+          type="submit"
+          style={{
+            backgroundColor: "#be8180",
+            color: "#122240",
+            padding: "10px",
+          }}
+        >
           Submit
         </Button>
       </form>

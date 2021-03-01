@@ -5,10 +5,19 @@ import Button from "react-bootstrap/Button";
 class DownloadResume extends Component {
   render() {
     return (
-      <Button className='mb-3 mt-3' href={myResume} download="resume.png">
+      <Button
+        href={myResume}
+        download="resume.png"
+        className="ml-3 mr-6"
+        style={{
+          backgroundColor: "#be8180",
+          color: "#122240",
+        
+        }}
+      >
         Download Resume Here
       </Button>
-    )
+    );
   }    
 };
 
