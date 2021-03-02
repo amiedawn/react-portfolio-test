@@ -30,7 +30,7 @@ class Header extends Component {
                   color: "#be8180",
                   padding: "5px",
                 }}
-                href="/"
+                href="./"
               >
                 AMIE CARROLL{" "}
               </a>
