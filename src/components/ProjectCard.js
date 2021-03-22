@@ -65,7 +65,7 @@ const ProjectCard = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {image.deployUrl}
+                  {image.deployLabel}
                 </Button>
                 <Button
                   style={{
@@ -78,7 +78,7 @@ const ProjectCard = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {image.githubUrl}
+                  {image.githubLabel}
                 </Button>
               </div>
             </div>

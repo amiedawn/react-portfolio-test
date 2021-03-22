@@ -53,6 +53,7 @@ class Code extends Component {
               <li>GitLab</li>
               <li>VS Code</li>
               <li>Heroku</li>
+              <li>GraphQL</li>
               <li>Webpack</li>
               <li>Jest</li>
               <li>Wix.com</li>
