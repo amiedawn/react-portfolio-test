@@ -5,7 +5,7 @@ export const images = [
     name: "Full Stack Taco Shop",
     alt: "FS Taco Shop screenshot",
     src: "../../../../../public/taco-shop.png",
-    deployUrl: "www.google.com",
+    deployUrl: "https://quiet-beach-11732.herokuapp.com",
     deployLabel: "Visit Website",
     githubUrl: "https://github.com/amiedawn/taco-shop",
     githubLabel: "Go to GitHub Repository",

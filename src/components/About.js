@@ -13,7 +13,7 @@ const About = () => (
     <h1 id="about">About Me</h1>
     <img
       src={bioPic}
-      style={{ width: "35%", padding: "35px" }}
+      style={{ width: "50%", padding: "35px" }}
       alt="pic of author"
     />
     <p
