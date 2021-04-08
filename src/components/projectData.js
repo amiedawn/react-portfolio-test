@@ -2,7 +2,7 @@
 export const images = [
   {
     id: 1,
-    name: "Full Stack Taco Shop",
+    name: "Restaurant Ordering Site",
     alt: "FS Taco Shop screenshot",
     src: "../../../../../public/taco-shop.png",
     deployUrl: "https://quiet-beach-11732.herokuapp.com",
@@ -12,7 +12,7 @@ export const images = [
   },
   {
     id: 2,
-    name: "Workout Planner",
+    name: "App to View, Review, and Save Workout Classes",
     alt: "Workout Planner screenshot",
     src: "../../../../../public/workout-planner.png",
     deployUrl: "https://quiet-forest-44254.herokuapp.com",
@@ -22,7 +22,7 @@ export const images = [
   },
   {
     id: 3,
-    name: "Jokinator",
+    name: "See Dad Jokes and Share on Twitter",
     alt: "Jokinator screenshot",
     src: "../../../../../assets/projects/jokinator.png",
     deployUrl: "https://amiedawn.github.io/jokinator",
@@ -32,7 +32,7 @@ export const images = [
   },
   {
     id: 4,
-    name: "Weather Dashboard",
+    name: "View Current Weather and 5-Day Forecast",
     alt: "Weather Dashboard screenshot",
     src: "../../../../../assets/projects/weather-dashboard.png",
     deployUrl: "https://amiedawn.github.io/weather-dashboard/",
@@ -42,7 +42,7 @@ export const images = [
   },
   {
     id: 5,
-    name: "Tech Blog",
+    name: "Blog Site",
     alt: "Tech Blog screenshot",
     src: "../../../../../assets/projects/tech-blog.png",
     deployUrl: "https://morning-wave-37012.herokuapp.com",
@@ -52,7 +52,7 @@ export const images = [
   },
   {
     id: 6,
-    name: "Code Quiz",
+    name: "Quiz that Counts Down and Tracks High Scores",
     alt: "Code Quiz screenshot",
     src: "../../../../../assets/projects/code-quiz.png",
     deployUrl: "https://amiedawn.github.io/quiz-app",
@@ -62,12 +62,12 @@ export const images = [
   },
   {
     id: 7,
-    name: "Work Portfolio",
-    alt: "Work Portfolio screenshot",
+    name: "Search and Save Books to a List",
+    alt: "Book Hunt screenshot",
     src: "../../../../../assets/projects/work-portfolio.png",
-    deployUrl: "https://amiedawn.github.io/work-portfolio",
+    deployUrl: "https://blooming-dawn-50560.herokuapp.com/",
     deployLabel: "Visit Website",
-    githubUrl: "https://github.com/amiedawn/work-portfolio",
+    githubUrl: "https://github.com/amiedawn/my-book-search/tree/master",
     githubLabel: "Go to GitHub Repository",
   },
 ];

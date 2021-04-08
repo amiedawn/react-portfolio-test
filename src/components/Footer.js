@@ -19,7 +19,7 @@ export default function Footer() {
               color: "#575a4b",
               padding: "5px",
             }}
-            href="mailto:amiedawn@hotmail.com"
+            href="mailto:amie.d.carroll@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
