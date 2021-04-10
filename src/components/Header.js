@@ -28,7 +28,7 @@ class Header extends Component {
                 style={{
                   backgroundColor: "#122240",
                   color: "#be8180",
-                  padding: "5px",
+                  padding: "5px"
                 }}
                 href="./"
               >
