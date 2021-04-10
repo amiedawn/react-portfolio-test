@@ -107,8 +107,8 @@ function ContactForm() {
           />
         </Form.Group>
         {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
+          <div className="ml-4 mb-4">
+            <p className="error-text text-capitalize">{errorMessage}</p>
           </div>
         )}
         <Button className="ml-4 mb-4"
