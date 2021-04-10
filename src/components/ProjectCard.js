@@ -1,5 +1,6 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
+//import Container from "react-bootstrap/Container";
+import { Container, Row, Col } from 'react-bootstrap';
 import { images } from "./projectData.js";
 import Button from 'react-bootstrap/Button';
 
@@ -19,41 +20,44 @@ const ProjectCard = () => {
           padding: "2rem"
         }}
       >
-        <div>
-          <div></div>
-          <div>
-            <hr/>
-            <p
-              className="black-text text-capitalize"
-              style={{
-                backgroundColor: "#be8180",
-                padding: "5px",
-                textAlign: "center",
-                fontSize: "35px",
-              }}
-            >
-              {image.name}
-            </p>
-
-            <img
-              className="img-fluid"
-              src={source}
-              alt={image.alt}
-              name={image.name}
-              style={{
-                flex: 1,
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            />
+        <Row className="show-grid">
+          <Col md={12}>
             <div>
-              <div
+              <p
+                className="black-text"
                 style={{
-                  padding: "25px",
                   backgroundColor: "#be8180",
+                  padding: "5px",
+                  textAlign: "center",
+                  fontSize: "25px",
                 }}
               >
+                {image.name}
+              </p>
+            </div>
+          </Col>
+          <Col md={8}>
+            <div>
+              <img
+                className="img-fluid"
+                src={source}
+                alt={image.alt}
+                name={image.name}
+                style={{
+                  flex: 1,
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              />
+            </div>
+          </Col>
+          <Col md={4}>
+            <div>
+              <div>
+                <hr>
+                </hr>
+                <hr></hr>
                 <Button
                   style={{
                     backgroundColor: "#c0a98e",
@@ -81,9 +85,11 @@ const ProjectCard = () => {
                   {image.githubLabel}
                 </Button>
               </div>
+              
             </div>
-          </div>
-        </div>
+          </Col>  
+        </Row>
+        
       </Container>
     );})
 )};
