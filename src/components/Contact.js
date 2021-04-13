@@ -25,13 +25,13 @@ function ContactForm() {
     if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value);
       if (!isValid) {
-        setErrorMessage("Your email is invalid.");
+        setErrorMessage("Your email is invalid!");
       } else {
         setErrorMessage("");
       }
     } else {
       if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
+        setErrorMessage(`${e.target.name} is required!`);
       } else {
         setErrorMessage("");
       }
@@ -107,8 +107,8 @@ function ContactForm() {
           />
         </Form.Group>
         {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
+          <div className="ml-4 mb-4">
+            <p className="error-text text-capitalize">{errorMessage}</p>
           </div>
         )}
         <Button className="ml-4 mb-4"
