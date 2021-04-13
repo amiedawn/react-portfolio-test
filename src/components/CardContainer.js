@@ -5,13 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const CardContainer = () => {
   return (
-    <div
-      className="text-center"
-      style={{
-        backgroundColor: "#122240",
-        color: "dark",
-        padding: "15px",
-      }}>
+    <div>
       <Container>
         <Row className="show-grid">
           <Col md={12}>

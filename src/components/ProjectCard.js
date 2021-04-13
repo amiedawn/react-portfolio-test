@@ -1,6 +1,6 @@
 import React from "react";
 //import Container from "react-bootstrap/Container";
-import { Card, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { images } from "./projectData.js";
 import Button from 'react-bootstrap/Button';
 
@@ -9,7 +9,7 @@ const ProjectCard = () => {
   images.map((image, i) => {
     const {default:source} = require(`../assets/projects/${i}.png`)
     return (
-      <Card border="light"
+      <Container 
         key={i}
         style={{
           flex: 1,
@@ -17,9 +17,7 @@ const ProjectCard = () => {
           alignItems: "center",
           justifyContent: "center",
           backgroundColor: "#122240",
-          padding: "2rem",
-          margin: "2rem",
-          width: "auto"
+          padding: "2rem"
         }}
       >
         <Row className="show-grid">
@@ -57,6 +55,9 @@ const ProjectCard = () => {
           <Col md={4}>
             <div>
               <div>
+                <hr>
+                </hr>
+                <hr></hr>
                 <Button
                   style={{
                     backgroundColor: "#c0a98e",
@@ -89,7 +90,7 @@ const ProjectCard = () => {
           </Col>  
         </Row>
         
-      </Card>
+      </Container>
     );})
 )};
 
