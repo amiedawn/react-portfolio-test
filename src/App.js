@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import Navigation from "./components/NavTabs";
 import About from "./components/About";
-import Contact from "./components/Contact";
+//import Contact from "./components/Contact";
 import Wrapper from "./components/Wrapper";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
@@ -11,7 +11,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   // define the nav tabs
-  const tabs = ["About Me", "Portfolio", "Contact", "Resume"];
+  //const tabs = ["About Me", "Portfolio", "Contact", "Resume"];
+  const tabs = ["About Me", "Portfolio", "Resume"];
   // define props for navbar
   const [currentPage, handlePageChange] = useState(tabs[0]);
   // decide which page to display at a given time
@@ -21,8 +22,8 @@ function App() {
         return <About></About>;
       case "Portfolio":
         return <Wrapper></Wrapper>;
-      case "Contact":
-        return <Contact></Contact>;
+      // case "Contact":
+      //   return <Contact></Contact>;
       case "Resume":
        return <Resume></Resume>;
       default:

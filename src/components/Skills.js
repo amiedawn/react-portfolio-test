@@ -38,7 +38,7 @@ class Code extends Component {
               <li>Inquirer.js</li>
               <li>Sequelize</li>
               <li>Dotenv</li>
-              <li>Express-session</li>
+              <li>Express-Session</li>
               <li>Regex</li>
               <li>IndexedDB</li>
             </ul>
@@ -49,15 +49,13 @@ class Code extends Component {
               <li>GitHub / GitHub Pages</li>
               <li>Insomnia Core</li>
               <li>JSON</li>
-              <li>Webpack</li>
               <li>GitLab</li>
               <li>VS Code</li>
               <li>Heroku</li>
               <li>GraphQL</li>
-              <li>Webpack</li>
               <li>Jest</li>
-              <li>Wix.com</li>
-              <li>Weebly.com</li>
+              <li>Wix</li>
+              <li>Weebly</li>
             </ul>
           </div>
         </div>
