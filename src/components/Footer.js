@@ -31,7 +31,7 @@ export default function Footer() {
               color: "#575a4b",
               padding: "5px",
             }}
-            href="http://www.linkedin.com/in/amie-carroll-0976606"
+            href="http://www.linkedin.com/in/amie-carroll-webdeveloper"
             target="_blank"
             rel="noopener noreferrer"
           >

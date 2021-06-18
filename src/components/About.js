@@ -22,8 +22,17 @@ const About = () => (
       }}
     >
       I am a Full-Stack Web Developer with experience in project management and customer service. I
-      love working on strong, collaborative teams toward a common goal and find great satisfaction in improving efficiency and finishing projects on time and under-budget. 
-      Those who know me best describe me as honest, organized, detail-oriented, and dependable. Learning new web technologies is my latest passion!
+      love working on strong, collaborative teams toward a common goal, and I find great satisfaction in improving efficiency and finishing projects on time and under-budget. 
+      Those who know me best describe me as honest, organized, detail-oriented, and dependable.
+    </p>
+    <p
+      style={{
+        fontSize: "20px",
+      }}
+    >
+      Learning new web technologies is my current passion! I enjoyed my time in a Full-Stack Web Development boot camp, 
+      where I learned a wide variety of languages and tools. Some of these include JavaScript, React, HTML, CSS,
+      Bootstrap, Node.js, Express, MongoDB, MySQL, GitHub, and VS Code.
     </p>
     <p
       style={{
