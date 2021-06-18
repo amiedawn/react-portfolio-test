@@ -82,6 +82,21 @@ const ProjectCard = () => {
                 >
                   {image.githubLabel}
                 </Button>
+                <p
+                style={{
+                    backgroundColor: "#be8180",
+                    color: "#122240",
+                    borderColor: "#122240",
+                    padding: ".6rem",
+                    margin: ".7rem",
+                  }}
+                block
+                href={image.skills}
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                Skills Used: {image.skills}
+                </p>
               </div>
               
             </div>

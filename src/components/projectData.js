@@ -1,4 +1,4 @@
-// project images
+// project images and data
 export const images = [
   {
     id: 1,
@@ -9,6 +9,7 @@ export const images = [
     deployLabel: "Visit Website",
     githubUrl: "https://github.com/amiedawn/taco-shop",
     githubLabel: "Go to GitHub Repository",
+    skills: "JavaScript, React.js, MongoDB, Express.js, Node.js, JWT",
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ export const images = [
     deployLabel: "Visit Website",
     githubUrl: "https://github.com/amiedawn/workout-planner",
     githubLabel: "Go to GitHub Repository",
+    skills: "JavaScript ",
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ export const images = [
     deployLabel: "Visit Website",
     githubUrl: "https://github.com/amiedawn/jokinator",
     githubLabel: "Go to GitHub Repository",
+    skills: "JavaScript ",
   },
   {
     id: 4,
@@ -39,6 +42,7 @@ export const images = [
     deployLabel: "Visit Website",
     githubUrl: "https://github.com/amiedawn/weather-dashboard",
     githubLabel: "Go to GitHub Repository",
+    skills: "JavaScript ",
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ export const images = [
     deployLabel: "Visit Website",
     githubUrl: "https://github.com/amiedawn/tech-blog",
     githubLabel: "Go to GitHub Repository",
+    skills: "JavaScript ",
   },
   {
     id: 6,
@@ -59,6 +64,7 @@ export const images = [
     deployLabel: "Visit Website",
     githubUrl: "https://github.com/amiedawn/quiz-app",
     githubLabel: "Go to GitHub Repository",
+    skills: "JavaScript ",
   },
   {
     id: 7,
@@ -69,6 +75,7 @@ export const images = [
     deployLabel: "Visit Website",
     githubUrl: "https://github.com/amiedawn/my-book-search/tree/master",
     githubLabel: "Go to GitHub Repository",
+    skills: "JavaScript ",
   },
 ];
 
