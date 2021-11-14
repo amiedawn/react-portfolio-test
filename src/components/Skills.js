@@ -18,8 +18,10 @@ class Code extends Component {
             <ul>
               <li>HTML5</li>
               <li>CSS</li>
+              <li>JavasCRIPT</li>
               <li>React</li>
               <li>Bootstrap</li>
+              <li>Styled Components</li>
               <li>jQuery</li>
               <li>Handlebars</li>
               <li>Bulma</li>
@@ -47,15 +49,16 @@ class Code extends Component {
             <h5>Other:</h5>
             <ul>
               <li>GitHub / GitHub Pages</li>
+              <li>React Testing Library</li>
               <li>Insomnia Core</li>
               <li>JSON</li>
               <li>GitLab</li>
               <li>VS Code</li>
               <li>Heroku</li>
+              <li>Jira</li>
+              <li>Agile Methodology</li>
               <li>GraphQL</li>
               <li>Jest</li>
-              <li>Wix</li>
-              <li>Weebly</li>
             </ul>
           </div>
         </div>
