@@ -18,13 +18,14 @@ class Code extends Component {
             <ul>
               <li>HTML5</li>
               <li>CSS</li>
-              <li>JavasCRIPT</li>
+              <li>JavaScript</li>
               <li>React</li>
               <li>Bootstrap</li>
-              <li>Styled Components</li>
+              <li>Styled-Components</li>
               <li>jQuery</li>
               <li>Handlebars</li>
               <li>Bulma</li>
+              <li>Redux</li>
             </ul>
           </div>
           <div className="col-lg-4 col-md-4 col-sm-4">
