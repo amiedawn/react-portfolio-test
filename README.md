@@ -18,7 +18,7 @@ This is a single-page application(SPA) portfolio of work samples to show a poten
 
 ## Installation Instructions:
 
-This application can be cloned at https://github.com/amiedawn/react-portfolio.git . It was created using Create React and Node.js. React Bootstrap was used for design in addition to CSS.
+This application can be cloned at https://github.com/amiedawn/react-portfolio.git . It was created using create-react-app. React Bootstrap was used for design in addition to CSS.
 
 ## Usage Information:
 
