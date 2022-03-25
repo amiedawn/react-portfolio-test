@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { validateEmail } from "../utils/helpers";
-import Form from "react-bootstrap/Form";
-import Button from 'react-bootstrap/Button';
 
 function ContactForm() {
   const [formState, setFormState] = useState({
@@ -13,31 +11,33 @@ function ContactForm() {
   const [errorMessage, setErrorMessage] = useState("");
   const { name, email, message } = formState;
 
+  const handleChange = (e) => {
+    if (e.target.name === "email") {
+      const isValid = validateEmail(e.target.value);
+
+      if (!isValid) {
+        setErrorMessage("Your email is invalid!");
+      } else {
+        if (!e.target.value.length) {
+          setErrorMessage(`${e.target.name} is required!`);
+        } else {
+          setErrorMessage("");
+        }
+      }
+    }
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
       setFormState({ [e.target.name]: e.target.value });
-      console.log("Form", formState);
+      console.log("form", formState);
     }
   };
 
-  const handleChange = (e) => {
-    if (e.target.name === "email") {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage("Your email is invalid!");
-      } else {
-        setErrorMessage("");
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required!`);
-      } else {
-        setErrorMessage("");
-      }
-    }
-  };
- 
   return (
     <div>
       <h1
@@ -60,58 +60,61 @@ function ContactForm() {
           color: "#c0a98e",
         }}
       >
-        <Form.Group
+        <div
           style={{
             backgroundColor: "#122240",
             color: "#c0a98e",
             padding: "20px",
           }}
         >
-          <Form.Label htmlFor="name">Name:</Form.Label>
-          <Form.Control
+          <label htmlFor="name">Name:</label>
+          <input
             type="text"
             name="name"
+            className="form-control"
             defaultValue={name}
             onBlur={handleChange}
           />
-        </Form.Group>
-        <Form.Group
+        </div>
+        <div
           style={{
             backgroundColor: "#122240",
             color: "#c0a98e",
             padding: "20px",
           }}
         >
-          <Form.Label htmlFor="email">Email Address:</Form.Label>
-          <Form.Control
+          <label htmlFor="email">Email Address:</label>
+          <input
             type="email"
             name="email"
+            className="form-control"
             defaultValue={email}
             onBlur={handleChange}
           />
-        </Form.Group>
-        <Form.Group
+        </div>
+        <div
           style={{
             backgroundColor: "#122240",
             color: "#c0a98e",
             padding: "20px",
           }}
         >
-          <Form.Label htmlFor="message">Message:</Form.Label>
-          <Form.Control
-            as="textarea"
+          <label htmlFor="message">Message:</label>
+          <textarea
             name="message"
-            rows={5}
+            className="form-control"
+            rows="5"
             defaultValue={message}
             onBlur={handleChange}
           />
-        </Form.Group>
+        </div>
         {errorMessage && (
           <div className="ml-4 mb-4">
             <p className="error-text text-capitalize">{errorMessage}</p>
           </div>
         )}
-        <Button className="ml-4 mb-4"
+        <button
+          className="ml-4 mb-4"
           data-testid="button"
           type="submit"
           style={{
@@ -121,7 +124,7 @@ function ContactForm() {
           }}
         >
           Submit
-        </Button>
+        </button>
       </form>
     </div>
   );
