@@ -1,10 +1,7 @@
 import React from "react";
-//import "./wrapperStyle.css";
-//import ProjectCard from './ProjectCard';
 import CardContainer from './CardContainer';
 
-const Wrapper = ({ images }) => {
-  //return <ProjectCard  />;
+const Wrapper = () => {
   return <CardContainer />;
 };
 

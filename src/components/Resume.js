@@ -11,8 +11,8 @@ function Resume() {
           padding: "20px",
         }}
       >
-        <DownloadResume></DownloadResume>
-        <Skills></Skills>
+        <DownloadResume />
+        <Skills />
       </div>
     );
 };

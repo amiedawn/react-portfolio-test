@@ -12,16 +12,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   // define the nav tabs
   const tabs = ["About Me", "Portfolio", "Contact", "Resume"];
-  //const tabs = ["About Me", "Portfolio", "Resume"];
-  // define props for navbar
+
+  // define props for navbar: state and setter function
   const [currentPage, handlePageChange] = useState(tabs[0]);
+   
   // decide which page to display at a given time
   function displayPage(tabName) {
     switch (tabName) {
       case "About Me":
         return <About />;
       case "Portfolio":
-        return <Wrapper></Wrapper>;
+        return <Wrapper />;
       case "Contact":
         return <Contact />;
       case "Resume":
@@ -41,7 +42,7 @@ function App() {
         />
       </Header>
        {displayPage(currentPage)}
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }
