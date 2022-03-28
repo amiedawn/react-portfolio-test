@@ -3,6 +3,12 @@ import { Card, Row, Col } from 'react-bootstrap';
 import { images } from "./projectData.js";
 import Button from 'react-bootstrap/Button';
 
+const ProjectColors = {
+  backgroundColor: "#c0a98e",
+  color: "#122240",
+  borderColor: "#122240"
+}
+
 const ProjectCard = () => {
   return(
   images.map((image, i) => {
@@ -57,11 +63,7 @@ const ProjectCard = () => {
             <div>
               <div>
                 <Button
-                  style={{
-                    backgroundColor: "#c0a98e",
-                    color: "#122240",
-                    borderColor: "#122240"
-                  }}
+                  style={ProjectColors}
                   block
                   href={image.deployUrl}
                   target="_blank"
@@ -70,11 +72,7 @@ const ProjectCard = () => {
                   {image.deployLabel}
                 </Button>
                 <Button
-                  style={{
-                    backgroundColor: "#c0a98e",
-                    color: "#122240",
-                    borderColor: "#122240",
-                  }}
+                  style={ProjectColors}
                   block
                   href={image.githubUrl}
                   target="_blank"

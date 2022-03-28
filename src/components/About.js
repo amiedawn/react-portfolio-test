@@ -1,6 +1,10 @@
 import React from "react";
 import bioPic from "../assets/images/bio-pic.png";
 
+const AboutFont ={
+  fontSize: "20px"
+}
+
 const About = () => (
   <div
     className="text-center"
@@ -17,27 +21,21 @@ const About = () => (
       alt="pic of author"
     />
     <p
-      style={{
-        fontSize: "20px",
-      }}
+      style={AboutFont}
     >
       I am a Full-Stack Web Developer with experience in project management and customer service. I
       love working on strong, collaborative teams toward a common goal, and I find great satisfaction in improving efficiency and finishing projects on time and under-budget. 
       Those who know me best describe me as honest, organized, detail-oriented, and dependable.
     </p>
     <p
-      style={{
-        fontSize: "20px",
-      }}
+      style={AboutFont}
     >
       Learning new web technologies is my current passion! I enjoyed my time in a Full-Stack Web Development boot camp, 
       where I learned a wide variety of languages and tools. Some of these include JavaScript, React, HTML, CSS,
       Bootstrap, Node.js, Express, MongoDB, MySQL, GitHub, and VS Code.
     </p>
     <p
-      style={{
-        fontSize: "20px",
-      }}
+      style={AboutFont}
     >
       Though I grew up in the Midwest, I currently live in Southern Utah. When I
       am not in front of a computer, I enjoy spending time with my family,

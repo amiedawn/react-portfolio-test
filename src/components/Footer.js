@@ -1,6 +1,12 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 
+const FooterIcon = {
+  backgroundColor: "#122240",
+  color: "#575a4b",
+  padding: "5px"
+}
+
 export default function Footer() {
   return (
     <Container fluid>
@@ -14,11 +20,7 @@ export default function Footer() {
       >
         <div className="col-md-12 content">
           <a
-            style={{
-              backgroundColor: "#122240",
-              color: "#575a4b",
-              padding: "5px",
-            }}
+            style={FooterIcon}
             href="mailto:amie.d.carroll@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -26,11 +28,7 @@ export default function Footer() {
             <i className="fa fa-envelope fa-fw fa-2x" />
           </a>
           <a
-            style={{
-              backgroundColor: "#122240",
-              color: "#575a4b",
-              padding: "5px",
-            }}
+            style={FooterIcon}
             href="http://www.linkedin.com/in/amie-carroll-webdeveloper"
             target="_blank"
             rel="noopener noreferrer"
@@ -38,11 +36,7 @@ export default function Footer() {
             <i className="fab fa-linkedin fa-fw fa-2x" />
           </a>
           <a
-            style={{
-              backgroundColor: "#122240",
-              color: "#575a4b",
-              padding: "5px",
-            }}
+            style={FooterIcon}
             href="http://www.facebook.com/amie.whitecarroll"
             target="_blank"
             rel="noopener noreferrer"
@@ -50,11 +44,7 @@ export default function Footer() {
             <i className="fab fa-facebook fa-fw fa-2x" />
           </a>
           <a
-            style={{
-              backgroundColor: "#122240",
-              color: "#575a4b",
-              padding: "5px",
-            }}
+            style={FooterIcon}
             href="https://github.com/amiedawn"
             target="_blank"
             rel="noopener noreferrer"
@@ -67,7 +57,6 @@ export default function Footer() {
                 style={{
                   backgroundColor: "#122240",
                   color: "#575a4b",
-                
                 }}
                 className="medium"
               >

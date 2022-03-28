@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { validateEmail } from "../utils/helpers";
 
+const FormInputComponent = {
+  backgroundColor: "#122240",
+  color: "#c0a98e",
+  padding: "20px"
+}
+
 function ContactForm() {
   const [formState, setFormState] = useState({
     name: "",
@@ -41,13 +47,8 @@ function ContactForm() {
   return (
     <div>
       <h1
-        data-testid="h1tag"
         className="text-center"
-        style={{
-          backgroundColor: "#122240",
-          color: "#c0a98e",
-          padding: "20px",
-        }}
+        style={FormInputComponent}
       >
         Contact Me
       </h1>
@@ -55,17 +56,10 @@ function ContactForm() {
       <form
         id="contact-form"
         onSubmit={handleSubmit}
-        style={{
-          backgroundColor: "#122240",
-          color: "#c0a98e",
-        }}
+        style={FormInputComponent}
       >
         <div
-          style={{
-            backgroundColor: "#122240",
-            color: "#c0a98e",
-            padding: "20px",
-          }}
+          style={FormInputComponent}
         >
           <label htmlFor="name">Name:</label>
           <input
@@ -77,11 +71,7 @@ function ContactForm() {
           />
         </div>
         <div
-          style={{
-            backgroundColor: "#122240",
-            color: "#c0a98e",
-            padding: "20px",
-          }}
+          style={FormInputComponent}
         >
           <label htmlFor="email">Email Address:</label>
           <input
@@ -93,11 +83,7 @@ function ContactForm() {
           />
         </div>
         <div
-          style={{
-            backgroundColor: "#122240",
-            color: "#c0a98e",
-            padding: "20px",
-          }}
+          style={FormInputComponent}
         >
           <label htmlFor="message">Message:</label>
           <textarea
@@ -115,7 +101,7 @@ function ContactForm() {
         )}
         <button
           className="ml-4 mb-4"
-          data-testid="button"
+          id="button"
           type="submit"
           style={{
             backgroundColor: "#be8180",
